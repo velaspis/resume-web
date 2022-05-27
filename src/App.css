@@ -1,59 +1,65 @@
-* {
+/* Set default styles for all elements */
+
+{
   font-size: 14px;
   font-weight: 300;
   line-height: 1.1;
   box-sizing: border-box;
-}
-.container {
+  }
+  /* Set styles for container element */
+  .container {
   max-width: 900px;
   height: 1080;
-}
-#intro {
+  }
+  
+  /* Set styles for intro section */
+  #intro {
   display: flex;
-}
-#intro img {
+  }
+  #intro img {
   aspect-ratio: 1;
   width: 100px;
   object-fit: cover;
   border-radius: 50px;
   margin: 15px;
-}
-#intro div {
+  }
+  #intro div {
   font-size: 23px;
   font-weight: 200;
   font-style: italic;
-}
-#intro h1 {
+  }
+  #intro h1 {
   padding: 0;
   font-size: 30px;
   font-weight: 650;
   line-height: 1.1;
-}
-.dark {
+  }
+  
+  /* Set styles for dark theme */
+  .dark {
   background-color: #272727;
   color: white;
-}
-.dark {
   padding-top: 20px;
-}
-
-.about-m {
+  }
+  
+  /* Set styles for about me section */
+  .about-m {
   width: 80%;
   margin-left: 20px;
   padding-left: 10px;
   border-left: 3px solid #c8b392;
   line-height: 1.3;
-}
-h2,
-.edu {
+  }
+  h2,
+  .edu {
   margin-left: 20px;
-}
-.edu {
+  }
+  .edu {
   padding-bottom: 10px;
   list-style-type: disc;
   padding-left: 0;
-}
-.ed {
+  }
+  .ed {
   padding-left: 10px;
   border-left: 2.5px dotted #c8b392;
   margin-top: 10px;
@@ -64,23 +70,23 @@ h2,
   font-size: 14px;
   font-weight: 300;
   line-height: 1.1;
-}
-h3 {
+  }
+  h3 {
   margin: 0px;
   font-size: 15px;
   font-weight: 300;
   font-style: italic;
-}
-h2 {
+  }
+  h2 {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.1;
   margin: 0px 0px 10px 20px;
-}
-.ed p {
+  }
+  .ed p {
   margin: 0px;
-}
-li.ed::before {
+  }
+  li.ed::before {
   content: "";
   width: 7px;
   aspect-ratio: 1;
@@ -90,43 +96,33 @@ li.ed::before {
   left: 0;
   top: 0;
   transform: translateX(-78%) rotate(45deg);
-}
-
-.white p {
+  }
+  
+  /* Set styles for white theme */
+  .white p {
   margin: 15px 0px 3px 20px;
-}
-
-.white ul {
+  }
+  .white ul {
   margin: 0px 7px 27px 0px;
-}
-
-[aria-labelledby="expertise"] ul {
+  }
+  
+  /* Set styles for expertise and language sections */
+  [aria-labelledby="expertise"] ul {
   margin-bottom: 10px;
-}
-#lang ~ ul li,
-#expertise ~ ul li {
+  }
+  #lang ~ ul li,
+  #expertise ~ ul li {
   position: relative;
   width: 100%;
   max-width: 350px;
-}
-#expertise ~ ul li span,
-#expertise ~ ul li span::before,
-#lang ~ ul li span,
-#lang ~ ul li span::before {
+  }
+  #expertise ~ ul li span,
+  #expertise ~ ul li span::before,
+  #lang ~ ul li span,
+  #lang ~ ul li span::before {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-}
-#lang ~ ul li span,
-#expertise ~ ul li span {
-  height: 7px;
-  width: 70px;
-  background-color: lightgrey;
-  display: block;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  }
 #lang ~ ul li span::before,
 #expertise ~ ul li span::before {
   content: "";
