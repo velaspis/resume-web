@@ -4,6 +4,10 @@
   line-height: 1.1;
   box-sizing: border-box;
 }
+.container {
+  max-width: 900px;
+  height: 1080;
+}
 #intro {
   display: flex;
 }
@@ -132,9 +136,11 @@ li.ed::before {
   background-color: #c8b392;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 800px) {
   main {
     display: flex;
+    border: #272727 solid 3px;
+    height: 1080px;
   }
   .dark {
     width: 45%;
